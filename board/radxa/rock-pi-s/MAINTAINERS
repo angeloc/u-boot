@@ -1,0 +1,8 @@
+FIREFLY
+M:	Angelo Compagnucci <angelo@amarulasolutions.com>
+S:	Maintained
+F:	arch/arm/dts/rk3288-rock-pi-s.dts
+F:	arch/arm/dts/rk3288-rock-pi-s-u-boot.dtsi
+F:	board/radxa/rock-pi-s
+F:	include/configs/rock-pi-s_rk3308.h
+F:	configs/rock-pi-s-rk3308_defconfig

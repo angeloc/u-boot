@@ -8,6 +8,10 @@ config TARGET_ROC_RK3308_CC
        bool "Firefly roc-rk3308-cc"
 	select BOARD_LATE_INIT
 
+config TARGET_ROCK_PI_S
+       bool "Radxa Rock PI S"
+	select BOARD_LATE_INIT
+
 config ROCKCHIP_BOOT_MODE_REG
 	default 0xff000500
 
@@ -25,5 +29,6 @@ config SPL_SERIAL
 
 source "board/rockchip/evb_rk3308/Kconfig"
 source "board/firefly/firefly-rk3308/Kconfig"
+source "board/radxa/rock-pi-s/Kconfig"
 
 endif

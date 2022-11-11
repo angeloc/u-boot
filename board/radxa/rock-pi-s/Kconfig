@@ -1,0 +1,15 @@
+if TARGET_ROCK_PI_S
+
+config SYS_BOARD
+	default "rock-pi-s"
+
+config SYS_VENDOR
+	default "radxa"
+
+config SYS_CONFIG_NAME
+	default "rock-pi-s_rk3308"
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+
+endif
