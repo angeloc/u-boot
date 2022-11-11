@@ -1,0 +1,4 @@
+ImagePos    Offset      Size  Name
+00000000  00000000  00892db0  main-section
+00000000   00000000  0000f800  mkimage
+007f8000   007f8000  0009adb0  blob

@@ -1805,11 +1805,11 @@ static int sd_select_mode_and_width(struct mmc *mmc, uint card_caps)
 					 bus_width(*w),
 					 mmc_mode2freq(mmc, mwt->mode) / 1000000);
 
-				/* configure the bus width (card + host) */
-				err = sd_select_bus_width(mmc, bus_width(*w));
-				if (err)
-					goto error;
-				mmc_set_bus_width(mmc, bus_width(*w));
+				//~ /* configure the bus width (card + host) */
+				//~ err = sd_select_bus_width(mmc, bus_width(*w));
+				//~ if (err)
+					//~ goto error;
+				//~ mmc_set_bus_width(mmc, bus_width(*w));
 
 				/* configure the bus mode (card) */
 				err = sd_set_card_speed(mmc, mwt->mode);
