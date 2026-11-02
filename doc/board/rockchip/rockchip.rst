@@ -185,6 +185,8 @@ List of mainline supported Rockchip boards:
      - Yanyi Tech CoolPi CM5 GenBook (coolpi-cm5-genbook-rk3588)
 
 * rv1103
+     - Luckfox Pico Mini A (luckfox-pico-mini-a-rv1103), see
+       :doc:`../luckfox/luckfox-pico`
      - Luckfox Pico Mini B (luckfox-pico-mini-b-rv1103), see
        :doc:`../luckfox/luckfox-pico`
 

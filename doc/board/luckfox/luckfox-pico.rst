@@ -3,8 +3,9 @@
 Luckfox Pico boards
 ===================
 
-U-Boot for the Luckfox Pico series of RV1103/RV1106 boards. Only the
-Pico Mini B (RV1103, 64MB DDR2, 128MB SPI NAND) is supported so far.
+U-Boot for the Luckfox Pico series of RV1103/RV1106 boards. The Pico
+Mini B (RV1103, 64MB DDR2, 128MB SPI NAND) and the Pico Mini A (the
+same board without the SPI NAND) are supported so far.
 
 Quick Start
 -----------
@@ -69,3 +70,19 @@ Rockchip usbplug and write the images:
    $ ./tools/upgrade_tool wl 0xa00 u-boot.img
 
 Power cycle the board and U-Boot output appears on UART2 (115200,8N1).
+
+Pico Mini A
+-----------
+
+The Pico Mini A has no SPI NAND: the BootROM loads U-Boot from the
+microSD card.
+
+.. code-block:: bash
+
+   $ export CROSS_COMPILE=arm-linux-gnueabihf-
+   $ export ROCKCHIP_TPL=<path-to-rkbin>/bin/rv11/rv1106_ddr_924MHz_v1.15.bin
+   $ make luckfox-pico-mini-a-rv1103_defconfig
+   $ make
+   $ dd if=u-boot-rockchip.bin of=/dev/sdX seek=64 conv=fsync
+
+where /dev/sdX is the microSD card.

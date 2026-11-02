@@ -1,0 +1,79 @@
+// SPDX-License-Identifier: GPL-2.0+
+// (C) Copyright 2026 Simon Glass <sjg@chromium.org>
+
+#include "rockchip-u-boot.dtsi"
+
+/ {
+	chosen {
+		u-boot,spl-boot-order = &sdmmc;
+	};
+};
+
+&xin24m {
+	bootph-all;
+};
+
+&grf {
+	bootph-all;
+};
+
+&cru {
+	bootph-all;
+};
+
+&pmuioc {
+	bootph-all;
+};
+
+&ioc {
+	bootph-all;
+};
+
+&pinctrl {
+	bootph-all;
+};
+
+&pcfg_pull_none {
+	bootph-all;
+};
+
+&pcfg_pull_up {
+	bootph-all;
+};
+
+&pcfg_pull_up_drv_level_2 {
+	bootph-all;
+};
+
+&gpio3 {
+	bootph-all;
+};
+
+&sdmmc {
+	bootph-pre-ram;
+	bootph-some-ram;
+};
+
+&sdmmc0_clk {
+	bootph-pre-ram;
+	bootph-some-ram;
+};
+
+&sdmmc0_cmd {
+	bootph-pre-ram;
+	bootph-some-ram;
+};
+
+&sdmmc0_det {
+	bootph-pre-ram;
+	bootph-some-ram;
+};
+
+&sdmmc0_bus4 {
+	bootph-pre-ram;
+	bootph-some-ram;
+};
+
+&uart2m1_xfer {
+	bootph-all;
+};

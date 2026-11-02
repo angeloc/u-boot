@@ -3,4 +3,5 @@ M:	Simon Glass <sjg@chromium.org>
 S:	Maintained
 F:	board/luckfox/pico
 F:	include/configs/luckfox_pico.h
+F:	configs/luckfox-pico-mini-a-rv1103_defconfig
 F:	configs/luckfox-pico-mini-b-rv1103_defconfig
